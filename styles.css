@@ -52,8 +52,8 @@
     border-bottom: 1px solid var(--line);
   }
   nav{
-    display:flex; align-items:center; justify-content:space-between;
-    padding: 18px 28px; max-width:1120px; margin:0 auto;
+    align-items:center; justify-content:space-between;
+    padding: 18px 28px; max-width:1120px; margin:0 auto; display: flex;
   }
  .logo{
   font-family:'Playfair Display', serif; font-weight:700;
@@ -297,9 +297,29 @@
   .hero-actions{ gap: 12px; }
   .btn{ padding: 11px 20px; font-size: 0.88rem; }
 
-  nav{ padding: 14px 18px; }
-  .logo{ font-size: 1.5rem; }
-}
+  .nav{
+    display: flex;  
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+  .logo{
+    font-size: 1.3rem;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    order: 1;
+    width: 100%;
+    line-height: 1;
+  }
+  .navtoggle{
+    order: 2;
+    margin-left: auto;
+    align-self: flex-start;
+  }
+  .navlinks{
+    display: flex; 
+    order: 3;
+  }
 
   .stat-row{ grid-template-columns: 1fr; }
   .stat-card{ padding: 18px; }
@@ -307,8 +327,8 @@
   .proj-card{ padding: 20px; }
   .proj-top{ flex-direction: column; gap: 8px; }
 
-  .proj-shot-row{ flex-direction: column; }
-  .proj-shot-row .proj-shot{ aspect-ratio: 16/10; }
+  .proj-shot-row{ flex-direction: column;gap: 12px; }
+  .proj-shot-row .proj-shot{ aspect-ratio: 16/10; max-width: 220px; margin: 0 auto;  }
 
   .timeline{ padding-left: 22px; }
   .tl-item::before{ left: -27.5px; }
@@ -321,6 +341,7 @@
   .contact-links .btn{ width: 100%; justify-content: center; }
 
   .edu-card{ padding: 20px; }
+}
 
 @media (max-width: 380px){
   .cert-grid{ grid-template-columns: 1fr; }
