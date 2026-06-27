@@ -9,7 +9,7 @@
     content="Portfolio of Dua Sohail — Computer Science student, Android & web developer, and creative designer.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
-    href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,8 +19,9 @@
 
   <header>
     <nav>
-      <a class="logo" href="#top">Dua Sohail</a>
       <div class="navlinks" id="navlinks">
+        <a class="logo" href="#top"><span class="initial">D</span>ua <span class="initial">S</span>ohail <span
+            class="initial">S</span>heikh</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
@@ -38,9 +39,15 @@
 
   <main>
     <section class="hero wrap" id="top">
-      <div class="eyebrow">Based in Lahore for studies · Originally from Jhang Sadar</div>
+      <div class="eyebrow">
+        <svg class="pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 21s-7-7.2-7-12a7 7 0 1 1 14 0c0 4.8-7 12-7 12z" />
+          <circle cx="12" cy="9" r="2.5" />
+        </svg>
+        Based in Lahore for studies
+        <span class="loc-divider"> Hometown : Jhang Sadar</span>
       <h1>Building with logic,<br>designing with <span class="accentword">intuition</span>.</h1>
-      <p class="lede">I'm Dua Sohail — a Computer Science student who builds Static websites, Android apps, and database
+      <p class="lede">I'm Dua Sohail — a Computer Science student who builds Static websites, android apps, and database
         by day, and edits,
         designs, and shoots photography by instinct. This site is both sides of that, in one place</p>
       <div class="hero-actions">
@@ -57,8 +64,8 @@
       </div>
       <div class="wrap about-grid reveal">
         <div>
-          <p>I'm currently in my 5th semester of a Bachelor's in Computer Science at the University of Lahore, holding a
-            CGPA of 3.47. My coursework spans algorithms, database systems, compiler design, numerical computing, data
+          <p>I have completed my 5th semester of a Bachelor's in Computer Science at the University of Lahore, holding a
+            CGPA of 3.47.I am expected to graduate in 2028. My coursework spans database systems, compiler design, theory of automata, programming fundamentals, object oriented programming, data
             structure and algorithms and many more and I genuinely enjoy the problem-solving that comes with all of it.
           </p>
           <p>Outside the classroom, I've spent time across front-end web development, SEO content writing, and social
@@ -77,7 +84,7 @@
             </div>
             <div class="stat-card">
               <div class="num">5th</div>
-              <div class="label">Semester, UOL</div>
+              <div class="label">Semester, University Of Lahore</div>
             </div>
             <div class="stat-card">
               <div class="num">6+</div>
@@ -344,10 +351,10 @@
           <span class="tl-date mono">COURSES & CERTIFICATES</span>
           <h4>Continued Learning</h4>
           <ul class="cert-list">
+            <li>Mobile App Development with Java — (March-May 2026)</li>
             <li>Python for Beginners — NumPy & Pandas (Jun 2025)</li>
-            <li>Mobile App Development with Java — in progress</li>
-            <li>International Kangaroo Certificate (Oct 2023)</li>
             <li>Event Organizer — Character Building Society (Jun 2024)</li>
+            <li>International Kangaroo Certificate (Oct 2023)</li>
           </ul>
         </div>
         <div class="edu-card">
@@ -398,12 +405,10 @@
 
     <section id="gallery">
       <div class="wrap section-head reveal">
-        <span class="tag mono">07 / Design & Photography</span>
+        <span class="tag mono">07 / Designs</span>
         <h2>The creative side.</h2>
       </div>
       <div class="wrap reveal">
-        <p class="gallery-note mono">Placeholder grid — replace each &lt;div class="g-item"&gt; below with your own
-          &lt;img&gt; tags (Canva designs, edited photos, personal shots).</p>
         <div class="gallery-grid">
           <div class="g-item"><img src="ds.png" alt=""></div>
           <div class="g-item"><img src="three (2).png" alt=""></div>
@@ -419,7 +424,7 @@
       <div class="wrap reveal">
         <div class="contact-box">
           <h2>Let's build something.</h2>
-          <p>Open to internships, junior developer roles, and freelance design work. Reach out — I reply fast.</p>
+          <p>Open to internships, junior developer roles, and freelance design work. Reach out, I reply fast.</p>
           <div class="contact-links">
             <a class="btn btn-solid" href="mailto:duasohail6336@gmail.com">Email Me</a>
             <a class="btn btn-ghost" href="https://www.linkedin.com/in/dua-sohail-3434302a7"
